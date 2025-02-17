@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 13px;
+	background-color: aliceblue;
+}
+
+@layer components {
+	.card {
+		@apply rounded-lg p-7 shadow-2xl;
+	}
+	.card-title {
+		@apply text-xl font-bold leading-7 mb-5;
+	}
+	.person {
+		@apply inline-flex items-center gap-4 w-full mb-5;
+	}
+	.person-photo {
+		@apply rounded-full  w-10 h-full;
+	}
+	.quote {
+		@apply font-medium after:content-['”'] before:content-['“'];
+	}
+	
+}
